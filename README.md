@@ -1,2 +1,2 @@
-# film-as-a-subversive-art
-Dataset of works featured in Vogel's "Film As A Subversive Art".
+# Film as a Subversive Art
+Dataset of works featured in "Film as a Subversive Art" by Amos Vogel.
