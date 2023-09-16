@@ -23,7 +23,7 @@ jobs:
           wd = df.loc[df.wikidata.str.contains('Q', na=False)]
           ratio = round((len(wd)/len(df))*100, 1)
           
-          print(len(wd), len(df), ratio)
+          print(len(wd), 'of', len(df), 'films have wikidata ids:', ratio, '%')
           
 
 
