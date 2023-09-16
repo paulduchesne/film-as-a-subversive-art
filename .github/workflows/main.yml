@@ -6,23 +6,21 @@ on:
 jobs:
   wikidata-info:
     runs-on: ubuntu-latest 
-    env: 
-      CI_COMMIT_MESSAGE: action run
-    permissions:
-      contents: write  
     steps:
     - name: checkout repo
       uses: actions/checkout@v3
-#    - name: install requirements
-#      run: pip3 install -r requirements.txt
-#    - name: run script
-#      run: ./run.sh
     - name: load data and report fillrate
       uses: jannekem/run-python-script-action@v1
       with:
         script: |
-
+        
+          import pandas
           import pathlib
-          for x in pathlib.Path.cwd().iterdir():
-              print(x)
+          
+          df = pandas.read_csv(pathlib.Path.cwd() / 'entries.csv')
+          wd = df.loc[df.wikidata.str.contains('Q', na=False)
+          
+          print(len(wd), len(df))
+          
+
 
