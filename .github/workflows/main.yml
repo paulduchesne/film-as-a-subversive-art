@@ -18,7 +18,7 @@ jobs:
           import pathlib
           
           df = pandas.read_csv(pathlib.Path.cwd() / 'entries.csv')
-          wd = df.loc[df.wikidata.str.contains('Q', na=False)
+          wd = df.loc[df.wikidata.str.contains('Q', na=False)]
           
           print(len(wd), len(df))
           
