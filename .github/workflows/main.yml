@@ -21,8 +21,9 @@ jobs:
           
           df = pandas.read_csv(pathlib.Path.cwd() / 'entries.csv')
           wd = df.loc[df.wikidata.str.contains('Q', na=False)]
+          ratio = round((len(wd)/len(df))*100, 1)
           
-          print(len(wd), len(df))
+          print(len(wd), len(df), ratio)
           
 
 
