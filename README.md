@@ -1,5 +1,3 @@
 # Film as a Subversive Art
-Dataset of works featured in "Film as a Subversive Art" by Amos Vogel.
 
-[Wikidata visualisation of works by country](https://w.wiki/7fRP)    
-[Wikidata visualisation of works by year](https://w.wiki/7fRR)
+Dataset sourced from Amos Vogel's [Film as a Subversive Art](https://en.wikipedia.org/wiki/Film_as_a_Subversive_Art), federated with [Wikidata](https://www.wikidata.org).
