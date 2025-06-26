@@ -1,10 +1,8 @@
 # Film as a Subversive Art
 
-Dataset from Amos Vogel's [Film as a Subversive Art](https://en.wikipedia.org/wiki/Film_as_a_Subversive_Art) with [Wikidata](https://www.wikidata.org) identifiers.
+Dataset from Amos Vogel's [Film as a Subversive Art](https://en.wikipedia.org/wiki/Film_as_a_Subversive_Art) with relevant [Wikidata](https://www.wikidata.org) identifiers.
 
 ### Queries
-
-Note that these queries require the [pandas](https://pypi.org/project/pandas/) and [requests](https://pypi.org/project/requests/) libraries.
 
 Is Wikidata ID valid? This query will return a dataframe of all entries which are no longer active, either due to redirection or deletion.
 
@@ -32,7 +30,7 @@ print(len(df))
 df.head()
 ```
 
-Federate from Wikidata, here pulling in "Country of Origin" (P495) data.
+Federate with Wikidata, here pulling in "Country of Origin" (P495) data.
 
 ```python
 import pandas
@@ -61,7 +59,7 @@ print(len(df))
 df.head()
 ```
 
-Access third-party identifiers, here pulling in "IMDB ID" (P345).
+Access third-party identifiers via Wikidata, here pulling in "IMDB ID" (P345) data.
 
 ```python
 import pandas
